@@ -1,5 +1,5 @@
 const endpoint = {
-    apiBaseUrl: 'http://localhost:5000/api',
+    apiBaseUrl: 'https://hosting-p10-production.up.railway.app/api',
 };
 
 export default endpoint;
