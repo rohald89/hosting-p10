@@ -16,7 +16,8 @@ const app = express();
 // Allow all CORS requests to go through
 app.use(cors(
     {
-        origin: "https://hosting-p10-production-5bc1.up.railway.app/",
+        origin: "*",
+        // origin: "https://hosting-p10-production-5bc1.up.railway.app/",
         methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
         exposedHeaders: ["x-auth-token"],
         credentials: true,
