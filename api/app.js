@@ -17,6 +17,10 @@ const app = express();
 app.use(cors(
     {
         origin: "https://hosting-p10-production-5bc1.up.railway.app/",
+        methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+        exposedHeaders: ["x-auth-token"],
+        credentials: true,
+
         optionsSuccessStatus: 200
     }
 ));
