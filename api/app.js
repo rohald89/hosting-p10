@@ -14,7 +14,12 @@ const enableGlobalErrorLogging = process.env.ENABLE_GLOBAL_ERROR_LOGGING === 'tr
 const app = express();
 
 // Allow all CORS requests to go through
-app.use(cors());
+app.use(cors(
+    {
+        origin: "https://hosting-p10-production-5bc1.up.railway.app/",
+        optionsSuccessStatus: 200
+    }
+));
 
 // Parse json
 app.use(express.json());
